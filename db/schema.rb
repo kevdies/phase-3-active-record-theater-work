@@ -15,7 +15,9 @@ ActiveRecord::Schema.define(version: 2022_12_20_011908) do
   create_table "auditions", force: :cascade do |t|
     t.string "actor"
     t.string "location"
-    t.integer "role"
+    t.string "phone"
+    t.boolean "hired"
+    t.integer "role_id"
   end
 
   create_table "roles", force: :cascade do |t|
